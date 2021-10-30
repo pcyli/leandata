@@ -34,7 +34,8 @@ export default function ExpenseTable (props) {
 
     const addExpense = (payload, resolve, reject) => {
         try {
-            if (isNaN(payload.cost)) {
+            debugger;
+            if (isNaN(payload.cost) || payload.cost === '') {
                 alert("Entered cost is not a number.");
                 reject();
                 return;

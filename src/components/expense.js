@@ -5,7 +5,7 @@ import React, {useState} from "react";
 
 export default function Expense(props) {
     const {
-        data: {id, category, description, cost},
+        data: {id, userid, category, description, cost},
         fullName, removeExpenseHandler, editExpenseHandler,
         users, categories, generateFullName
     } = props;
@@ -27,7 +27,7 @@ export default function Expense(props) {
 
     const editHandler = (payload, resolve, reject) => {
         try {
-            if (isNaN(payload.cost)) {
+            if (isNaN(payload.cost) || payload.cost === '') {
                 alert("Entered cost is not a number.");
                 reject();
                 return;
@@ -55,7 +55,7 @@ export default function Expense(props) {
                 <input type={"text"} name={"id"} hidden readOnly={true} value={id}/>
                 <div>
                     <label htmlFor={"userid"}>Full Name:</label>
-                    <select name={"userid"} defaultValue={id}>
+                    <select name={"userid"} defaultValue={userid}>
                         {
                             generateUserDropdown(users)
                         }
