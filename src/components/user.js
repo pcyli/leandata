@@ -10,6 +10,11 @@ export default function User (props) {
 
     const editHandler = (payload, resolve, reject) => {
         try {
+            if (payload.firstName === '' || payload.lastName === '' ) {
+                alert('Both First and Last Names cannot be empty.');
+                reject();
+                return;
+            }
             editUserHandler(payload);
             resolve();
         } catch (e) {

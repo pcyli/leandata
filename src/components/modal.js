@@ -8,7 +8,7 @@ export default function Modal (props) {
         const payload = {}
 
         for (const element of fields) {
-            if (!isNaN(element.value)) {
+            if (element.value !== '' && !isNaN(element.value)) {
                 payload[element.name] = parseFloat(element.value);
             } else {
                 payload[element.name] = element.value;

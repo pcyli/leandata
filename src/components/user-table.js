@@ -16,6 +16,11 @@ export default function UserTable (props) {
 
     const addUser = (payload, resolve, reject) => {
         try {
+            if (payload.firstName === '' || payload.lastName === '' ) {
+                alert('Both First and Last Names cannot be empty.');
+                reject();
+                return;
+            }
             addUserHandler({...payload, totalExpense: 0});
             resolve();
         } catch (e) {

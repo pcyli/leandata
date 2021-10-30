@@ -27,6 +27,15 @@ export default function Expense(props) {
 
     const editHandler = (payload, resolve, reject) => {
         try {
+            if (isNaN(payload.cost)) {
+                alert("Entered cost is not a number.");
+                reject();
+                return;
+            } else if (payload.description === '') {
+                alert("Description cannot be empty.");
+                reject();
+                return;
+            }
             editExpenseHandler(payload);
             resolve();
         } catch (e) {
