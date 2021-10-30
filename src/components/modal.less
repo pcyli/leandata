@@ -1,0 +1,46 @@
+div.Modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ModalContent {
+    height: 50vh;
+    width: 40vh;
+    background: white;
+    position: relative;
+
+    section {
+      div {
+        display: flex;
+        background-color: white !important;
+
+        * {
+          flex: 1;
+        }
+      }
+    }
+
+    footer {
+      display: flex;
+      justify-content: right;
+      position: absolute;
+      bottom: 1rem;
+      width: 100%;
+
+      div {
+        padding: 0 0.7rem;
+        cursor: pointer;
+
+        &:hover {
+          color: blue;
+        }
+      }
+    }
+  }
+}

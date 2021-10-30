@@ -1,0 +1,25 @@
+@button-blue: #6666fd;
+@button-hover: #2727fa;
+
+.ButtonEditDelete {
+  display: flex;
+  cursor: pointer;
+
+  div {
+    border: 1px solid darkgray;
+    padding: 0 1rem;
+    margin: 0.2rem 0.25rem;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    max-height: 1rem;
+
+    background-color: @button-blue;
+    color: white;
+    transition-duration: 0.25s;
+
+    &:hover {
+      background-color: @button-hover;
+
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@dark-blue: #0e3757;
+@blue: #40406b;
+@light-gray: lightgray;
+@dark-blue-gray: #06283f;
+
+@border-radius: 5px;
+
+html {
+  background-color: @dark-blue;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  color: @light-gray;
+
+  & > div[class$=Table] {
+    margin-top: 2em;
+    border: solid @light-gray 1px;
+    border-radius: @border-radius;
+    align-content: center;
+    width: 30vw;
+    min-width: 500px;
+    background-color: @blue;
+    padding-bottom: 1rem;
+
+      header {
+        display: flex;
+        justify-content: space-evenly;
+        flex: 1;
+        margin-bottom: 1rem;
+        font-weight: normal;
+        background-color: @dark-blue-gray;
+        border-radius: @border-radius;
+        padding: 0 1rem;
+
+        .add-item {
+          border: solid 1px lightgray;
+          border-radius: @border-radius;
+          text-align: center;
+          vertical-align: middle;
+          background-color: darken(@dark-blue-gray, 5%);
+          cursor: pointer;
+
+          &:hover {
+            background-color: lighten(@dark-blue-gray, 5%);
+          }
+        }
+
+      }
+
+      section {
+        font-weight: lighter;
+        padding: 0 1rem;
+
+        > div:nth-child(even) {
+          background-color: lighten(@blue, 3%);
+        }
+      }
+  }
+
+}
