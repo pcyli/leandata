@@ -1,0 +1,39 @@
+div.Modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.Modal .ModalContent {
+  height: 50vh;
+  width: 40vh;
+  background: white;
+  position: relative;
+}
+div.Modal .ModalContent section div {
+  display: flex;
+  background-color: white !important;
+}
+div.Modal .ModalContent section div * {
+  flex: 1;
+}
+div.Modal .ModalContent footer {
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+}
+div.Modal .ModalContent footer div {
+  padding: 0 0.7rem;
+  cursor: pointer;
+}
+div.Modal .ModalContent footer div:hover {
+  color: blue;
+}
+/*# sourceMappingURL=modal.css.map */

@@ -1,0 +1,8 @@
+.CompanyExpense {
+  display: flex;
+  justify-content: space-evenly;
+}
+.CompanyExpense div {
+  flex: 1;
+}
+/*# sourceMappingURL=company-expense.css.map */

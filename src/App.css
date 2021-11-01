@@ -1,0 +1,49 @@
+html {
+  background-color: #0e3757;
+}
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  color: lightgray;
+}
+.App > div[class$=Table] {
+  margin-top: 2em;
+  border: solid lightgray 1px;
+  border-radius: 5px;
+  align-content: center;
+  width: 30vw;
+  min-width: 500px;
+  background-color: #40406b;
+  padding-bottom: 1rem;
+}
+.App > div[class$=Table] header {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  background-color: #06283f;
+  border-radius: 5px;
+  padding: 0 1rem;
+}
+.App > div[class$=Table] header .add-item {
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #041928;
+  cursor: pointer;
+}
+.App > div[class$=Table] header .add-item:hover {
+  background-color: #083756;
+}
+.App > div[class$=Table] section {
+  font-weight: lighter;
+  padding: 0 1rem;
+}
+.App > div[class$=Table] section > div:nth-child(even) {
+  background-color: #464675;
+}
+/*# sourceMappingURL=App.css.map */

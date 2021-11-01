@@ -1,0 +1,19 @@
+.ButtonEditDelete {
+  display: flex;
+  cursor: pointer;
+}
+.ButtonEditDelete div {
+  border: 1px solid darkgray;
+  padding: 0 1rem;
+  margin: 0.2rem 0.25rem;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  max-height: 1rem;
+  background-color: #6666fd;
+  color: white;
+  transition-duration: 0.25s;
+}
+.ButtonEditDelete div:hover {
+  background-color: #2727fa;
+}
+/*# sourceMappingURL=button-edit-delete.css.map */

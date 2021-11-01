@@ -1,0 +1,9 @@
+.User {
+  display: flex;
+  justify-content: space-evenly;
+}
+.User input {
+  width: 3em;
+  flex: 1;
+}
+/*# sourceMappingURL=user.css.map */

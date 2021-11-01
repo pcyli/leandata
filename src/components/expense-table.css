@@ -1,0 +1,8 @@
+.ExpenseTable header > div,
+.ExpenseTable .Expense > div {
+  flex: 1;
+}
+.ExpenseTable div.double-wide {
+  flex-grow: 2;
+}
+/*# sourceMappingURL=expense-table.css.map */
